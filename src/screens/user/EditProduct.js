@@ -36,6 +36,7 @@ const EditProduct = props => {
               <TextInput onEndEditing={()=>console.log('done editing :D')}
                          returnKeyType='next' style={styles.input} 
                          value={title} onChangeText={setTitle} keyboardType='default' 
+                         autoCapitalize="sentences"
               />
             </View>
             <View style={styles.formControl}>
@@ -52,6 +53,7 @@ const EditProduct = props => {
               <Text style={styles.title}>Description:</Text>
               <TextInput keyboardType='default' returnKeyType='done'
                          style={styles.input} value={description} onChangeText={setDescription} 
+                         autoCapitalize="sentences"
                                       
              />
             </View>
