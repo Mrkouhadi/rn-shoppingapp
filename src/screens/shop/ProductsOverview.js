@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet,SafeAreaView,Text, Button, FlatList } from 'react-native'
+import { StyleSheet, Button, FlatList } from 'react-native'
 import { useDispatch, useSelector } from 'react-redux';
 import ProductItem from '../../components/ProductItem';
 import Colors from '../../constants/Colors';

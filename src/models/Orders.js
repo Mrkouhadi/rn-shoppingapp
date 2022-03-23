@@ -14,8 +14,8 @@ class Order{
         //                                         day:'numeric',
         //                                         hour:'2-digit',
         //                                         minute:'2-digit'
-        //                                     })
-        return moment(this.date).format("MMMM Do YYYY, hh:mm");
+        //                                     }) // i removed it because it doesn't work on ANDROID,
+        return moment(this.date).format("MMMM Do YYYY, hh:mm");  // this is a better way which works on both platforms OS
     }
 }
 export default Order;

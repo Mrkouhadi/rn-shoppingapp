@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react'
+import React from 'react'
 import { StyleSheet,SafeAreaView, FlatList, View, Text, Button, Alert } from 'react-native'
 import  Icon  from 'react-native-vector-icons/Ionicons';
 import { useDispatch, useSelector } from 'react-redux';

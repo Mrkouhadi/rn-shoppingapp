@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Image, Text, Button, TouchableOpacity, Platform, TouchableNativeFeedback} from 'react-native';
+import {StyleSheet, View, Image, Text, TouchableOpacity, Platform, TouchableNativeFeedback} from 'react-native';
 
 const ProductItem = (props)=>{
   let ViewComp = TouchableOpacity;
