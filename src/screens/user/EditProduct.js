@@ -37,6 +37,7 @@ const EditProduct = props => {
                          returnKeyType='next' style={styles.input} 
                          value={title} onChangeText={setTitle} keyboardType='default' 
                          autoCapitalize="sentences"
+                         
               />
             </View>
             <View style={styles.formControl}>
