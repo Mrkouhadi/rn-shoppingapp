@@ -3,7 +3,7 @@
     `npm install`
     `cd ios && pod install`
 ### run the procet on an ios simulator :
-  `npx react-ntive run-ios`
+  `npx react-native run-ios`
 
 ### run the procet on an android simulator :
-  `npx react-ntive run-android`
+  `npx react-native run-android`
