@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
+import {StyleSheet, View, Text, Pressable} from 'react-native';
 
 import Icon from 'react-native-vector-icons/AntDesign';
 import Colors from '../constants/Colors';
@@ -12,9 +12,9 @@ const CartItem = (props)=>{
                         <Text style={styles.quantity}>QTY   : {props.quantity}</Text>
                         <Text style={styles.sum}>Price : ${props.sum.toFixed(2)}</Text>
                     </View>
-            { !props.deleteable && <TouchableOpacity>
+            { !props.deleteable && <Pressable>
                               <Icon name="delete" size={30} color={Colors.primaryColor} onPress={props.onDelete}/>
-                            </TouchableOpacity>
+                            </Pressable>
             }
               </View>
   };

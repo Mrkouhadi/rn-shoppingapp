@@ -1,6 +1,6 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import {StyleSheet, View, Text, TouchableOpacity, Platform} from 'react-native'
+import {StyleSheet, View, Text, Platform, Pressable} from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import Icon from 'react-native-vector-icons/AntDesign';
 import Entypo from 'react-native-vector-icons/Entypo';
@@ -14,7 +14,7 @@ import Colors from '../constants/Colors';
 
 const Tab = createBottomTabNavigator();
 const CustomTab = (props)=>{
-  return <TouchableOpacity style={{
+  return <Pressable style={{
                           top:-20, alignItems:'center', justifyContent:'center',
                           ...styles.shadow
                         }} onPress={props.onPress}>
@@ -23,7 +23,7 @@ const CustomTab = (props)=>{
                         }}>
               {props.children}
             </View>
-        </TouchableOpacity>
+        </Pressable>
 }
 
 const Tabs=()=> {

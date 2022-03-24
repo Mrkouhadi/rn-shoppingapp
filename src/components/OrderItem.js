@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {StyleSheet, View, Text, TouchableOpacity, Dimensions} from 'react-native';
+import {StyleSheet, View, Text, Pressable, Dimensions} from 'react-native';
 import CartItem from './CartItem';
 import Colors from '../constants/Colors';
 
@@ -10,9 +10,9 @@ const OrderItem = ({total, date,items})=>{
                         <Text style={styles.total}>${total.toFixed(2)} </Text>
                         <Text style={styles.date}> {date}</Text>
                     </View>
-                    <TouchableOpacity style={styles.viewBtn} onPress={()=>setShowDetails(!showDetails)} >
+                    <Pressable style={styles.viewBtn} onPress={()=>setShowDetails(!showDetails)} >
                         <Text style={styles.date}>{!showDetails ? 'Show Details': 'Hide Details'}</Text>
-                    </TouchableOpacity>
+                    </Pressable>
                     {
                         showDetails && <View>
                             {items.map(or =><CartItem key={or.productId} title={or.productTitle}
