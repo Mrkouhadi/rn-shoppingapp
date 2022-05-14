@@ -32,7 +32,7 @@ const CartItem = (props)=>{
          marginHorizontal:6, marginTop:6
       },
       title:{
-        fontSize:18,
+        fontSize:20,
         flex:.5,
         color:Colors.fontColor
       },
